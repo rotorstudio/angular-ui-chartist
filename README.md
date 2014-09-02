@@ -47,4 +47,4 @@ And finally, add the Chart Markup to your Html:
 
 ## Options
 
-Ass this directive is just an wrapper, configuration and options is done as written in the official [chartist documentation](https://gionkunz.github.io/chartist-js/api-documentation.html).
+As this directive is just an wrapper, configuration and options is done as written in the official [chartist documentation](https://gionkunz.github.io/chartist-js/api-documentation.html).
