@@ -3,7 +3,9 @@
  * http://https://github.com/rotorstudio/angular-ui-chartist
  * 
 
- * Version: 0.0.1 - 2014-09-02
+ * author: <roccostorm@gmx.de>
+
+ * Version: 0.0.2 - 2014-09-02
  * License: MIT
  */
 (function() {
@@ -14,12 +16,10 @@
     return {
       restrict: 'A',
       scope: {
-        data: '=',
-        options: '=',
-        responsiveOptions: '='
+        data: '='
       },
       link : function(scope, elem, attrs) {
-        Chartist.Line('#'+attrs.id, scope.data, scope.options, scope.responsiveOptions);
+        Chartist.Line(elem.context, scope.data.data, scope.data.options, scope.data.responsiveOptions);
       }
     };
   })
@@ -28,12 +28,10 @@
     return {
       restrict: 'A',
       scope: {
-        data: '=',
-        options: '=',
-        responsiveOptions: '='
+        data: '='
       },
       link : function(scope, elem, attrs) {
-        Chartist.Bar('#'+attrs.id, scope.data, scope.options, scope.responsiveOptions);
+        Chartist.Bar(elem.context, scope.data.data, scope.data.options, scope.data.responsiveOptions);
       }
     };
   })
@@ -42,12 +40,10 @@
     return {
       restrict: 'A',
       scope: {
-        data: '=',
-        options: '=',
-        responsiveOptions: '='
+        data: '='
       },
       link : function(scope, elem, attrs) {
-        Chartist.Pie('#'+attrs.id, scope.data, scope.options, scope.responsiveOptions);
+        Chartist.Pie(elem.context, scope.data.data, scope.data.options, scope.data.responsiveOptions);
       }
     };
   });
