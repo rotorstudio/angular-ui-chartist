@@ -12,10 +12,10 @@ Simple Directives for to use [Chartist](https://gionkunz.github.io/chartist-js/i
 ## Usage
 
 First, make shure tthe Chartist JS and CSS Files are included in your project.
-Download (`ui-chartist.js`)[https://raw.githubusercontent.com/rotorstudio/angular-ui-chartist/master/src/ui-chartist.js] and add it to your application:
+Download [`ui-chartist.js`](https://raw.githubusercontent.com/rotorstudio/angular-ui-chartist/master/src/ui-chartist.js) and add it to your application:
 
 ```html
-<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="path/to/ui-chartist.js"></script>
 ```
 
 Add the UI.Chartist module as dependency to you application module:
@@ -31,7 +31,7 @@ myApp.controller('myController', function($scope) {
     $scope.mychart = {};
     $scope.mychart.data = { ... };
     $scope.mychart.options = { ... };
-    $scope.mychart.responsveOptions = { ... };
+    $scope.mychart.responsiveOptions = { ... };
     });
 ```
 

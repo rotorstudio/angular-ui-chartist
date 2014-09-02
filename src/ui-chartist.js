@@ -15,10 +15,11 @@
       restrict: 'A',
       scope: {
         data: '=',
-        options: '='
+        options: '=',
+        responsiveOptions: '='
       },
       link : function(scope, elem, attrs) {
-        Chartist.Line('#'+attrs.id, scope.data, scope.options, responsiveOptions);
+        Chartist.Line('#'+attrs.id, scope.data, scope.options, scope.responsiveOptions);
       }
     };
   })
@@ -28,10 +29,11 @@
       restrict: 'A',
       scope: {
         data: '=',
-        options: '='
+        options: '=',
+        responsiveOptions: '='
       },
       link : function(scope, elem, attrs) {
-        Chartist.Bar('#'+attrs.id, scope.data, scope.ptions);
+        Chartist.Bar('#'+attrs.id, scope.data, scope.options, scope.responsiveOptions);
       }
     };
   })
@@ -41,10 +43,11 @@
       restrict: 'A',
       scope: {
         data: '=',
-        options: '='
+        options: '=',
+        responsiveOptions: '='
       },
       link : function(scope, elem, attrs) {
-        Chartist.Pie('#'+attrs.id, scope.data, scope.options);
+        Chartist.Pie('#'+attrs.id, scope.data, scope.options, scope.responsiveOptions);
       }
     };
   });
