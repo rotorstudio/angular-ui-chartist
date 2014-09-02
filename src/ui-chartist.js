@@ -1,6 +1,7 @@
 /*
  * angular-ui-chartist
- * http://...
+ * http://https://github.com/rotorstudio/angular-ui-chartist
+ * 
 
  * Version: 0.0.1 - 2014-09-02
  * License: MIT
