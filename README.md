@@ -38,11 +38,11 @@ myApp.controller('myController', function($scope) {
 And finally, add the Chart Markup to your Html:
 
 ```html
-<div bar-chart class="st-chart" data="mychart.data" options="mychart.options"></div>
+<div bar-chart class="st-chart" data="mychart"></div>
 // or
-<div line-chart class="st-chart" data="mychart.data" options="mychart.options"></div>
+<div line-chart class="st-chart" data="mychart"></div>
 // ar
-<div pie-chart class="st-chart" data="mychart.data" options="mychart.options"></div>
+<div pie-chart class="st-chart" data="mychart"></div>
 ```
 
 Please note, that the *class* attribute is mandatory.
