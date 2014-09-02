@@ -31,7 +31,7 @@ myApp.controller('myController', function($scope) {
     $scope.mychart = {};
     $scope.mychart.data = { ... };
     $scope.mychart.options = { ... };
-    $scope.mychart.responsveOptions = { ... };
+    $scope.mychart.responsiveOptions = { ... };
     });
 ```
 
